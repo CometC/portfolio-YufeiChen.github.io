@@ -1,8 +1,8 @@
-title: Your awesome title
+title: Yufei Chen
 
 author:
-  name: Your name
-  email: your-username@mit.edu
+  name: Yufei Chen
+  email: chenyf@mit.edu
 
 description: > # this means to ignore newlines until "show_excerpts:"
   Write an awesome description for your new site here. You can edit this
@@ -22,11 +22,11 @@ date_format: "%b %-d, %Y"
 
 # generate social links in footer
 social_links:
-  twitter: your-social-media
-  github:  your-social-media
-  facebook: your-social-media
-  # instagram: your-social-media
-  # linkedin: your-social-media
+  # twitter: your-social-media
+  github:  CometC
+  # facebook: your-social-media
+  instagram: yufei.chen29
+  linkedin: yufei-chen-968471214
   # youtube: your-social-media
 
 # If you want to link only specific pages in your header, uncomment
