@@ -10,35 +10,29 @@ layout: default
   {{ content }}
 
 
-  {% assign projects = site.projects %}
+  {% assign posts = site.posts %}
 
 
-  {% if projects.size > 0 %}
+  {% if posts.size > 0 %}
     {% if page.list_title %}
-      <h2 class="project-list-heading">{{ page.list_title }}</h2>
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {% endif %}
-    <ul class="project-list">
+    <ul class="post-list">
       {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-      {% for project in projects %}
+      {% for post in posts %}
       <li>
-        <div class="project-col">
-          {% if project.image %}
-            {% assign image_url = "/assets/images/" | append: project.image | default: "assets/images/project.png" %}
-            <img src="{{ image_url | relative_url }}" alt="{{ project.title }}" />
-          {% endif %}
-        </div>
-        <div class="project-col">
+        <div class="post-col">
           <h3>
-            <a class="project-link" href="{{ project.url | relative_url }}">
-              {{ project.title | escape }}
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
             </a>
           </h3>
           <p>
-            {{ project.description }}
+            {{ post.description }}
           </p>
-          <span class="project-meta">{{ project.date | date: date_format }}</span>
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
           {% if site.show_excerpts %}
-          {{ project.excerpt }}
+          {{ post.excerpt }}
         {% endif %}
         </div>
       </li>

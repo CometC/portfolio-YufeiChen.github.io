@@ -5,8 +5,9 @@
 # To change the page layout, edit the _layouts/projects.html file.
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
-layout: projects
-title: Contacts
+layout: default
+title: Others
 permalink: /contacts/
 order: 3
 ---
+TBD...

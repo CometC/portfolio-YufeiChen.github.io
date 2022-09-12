@@ -1,14 +1,20 @@
----
-layout: default
----
-<article class="project">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  <header class="project-header">
-    <h1 class="page-heading">{{ page.title | escape }}</h1>
-  </header>
+  {% include head.html %}
 
-  <div class="project-content">
-    {{ content }}
-  </div>
+  <body>
 
-</article>
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper", align="center">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
